@@ -121,6 +121,7 @@ body {
   line-height: 1.5;
   margin-bottom: 4.8rem;
 }
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -598,6 +599,15 @@ strong {
   border: none;
   border-radius: 9px;
   width: 100%;
+}
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+.btn--form::first-letter {
+  text-transform: uppercase;
 }
 
 /* ************************************ */
