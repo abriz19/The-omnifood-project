@@ -58,7 +58,7 @@ body {
   justify-content: space-between;
   /* to make the nav sticky let us use the height property */
   height: 9.6rem;
-  padding: 0 3.2rem;
+  padding: 0 4.8rem;
   background-color: #fdf2e9;
 }
 
@@ -74,7 +74,7 @@ body {
   display: flex;
   align-items: center;
   list-style: none;
-  gap: 3.2rem;
+  gap: 4.8rem;
 }
 .main-nav-link:link,
 .main-nav-link:visited {
@@ -93,7 +93,6 @@ body {
 /* ********************************************************* */
 /* ********************* Hero Section ********************* */
 /* ********************************************************** */
-
 .section-hero {
   background-color: #fdf2e9;
   padding: 4.8rem 0 9.6rem 0;
@@ -162,6 +161,7 @@ body {
   display: flex;
   gap: 1.6rem;
   align-items: center;
+  margin-top: 8rem;
 }
 .delivered-meals p {
   font-size: 1.8rem;
@@ -233,7 +233,7 @@ body {
   width: 35%;
 }
 .step-number {
-  font-size: 6.4rem;
+  font-size: 8.6rem;
   font-weight: 600;
   color: #ddd;
   margin-bottom: 1.6rem;
@@ -401,6 +401,9 @@ strong {
 .testimonal-section {
   /* padding: 9.6rem 0; */
   background-color: #fdf2e9;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4.8rem;
 }
 .testimonals-container {
   padding: 9.6rem;
@@ -547,9 +550,10 @@ strong {
 .cta {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  background-image: linear-gradient(to right bottom, #e7812d, #cf6a1d);
+  background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
   gap: 1.2rem;
-  height: 50rem;
+  /* height: 50rem; */
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
   border-radius: 11px;
   overflow: hidden;
 }
