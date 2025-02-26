@@ -88,4 +88,64 @@
   .btn--form {
     margin-top: 1.8rem;
   }
+  .btn-mobile-nav {
+    display: block;
+  }
+
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.97);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100%);
+    transition: all 2s ease-in;
+
+    /* Hide navigation */
+    /* Allows NO transition at all */
+    /* display: none; */
+
+    /* 1) Hide the element visually */
+    opacity: 0;
+
+    /* 2) Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3) Hide it from screen readers */
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    /* 1) Make the element visible */
+    opacity: 1;
+
+    /* 2) Make it accessible to mouse and keyboard */
+    pointer-events: auto;
+
+    /* 3) Make it visible to screen readers */
+    visibility: visible;
+
+    transform: translateX(0%);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
 }
